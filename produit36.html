@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commande - foot 36</title>
+    
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="stade.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <a href="index.html" class="nav-logo">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 2c1.322 0 2.578.322 3.683.888L13.5 7H10.5L8.317 4.888A7.963 7.963 0 0112 4zM6.373 5.848L8.5 8.5l-2 4H3.07A8.01 8.01 0 016.373 5.848zm11.254 0A8.01 8.01 0 0120.93 12.5H17.5l-2-4 2.127-2.652zM10 9h4l1.5 3-1.5 3H10L8.5 12 10 9zm-6.93 5h3.168l2 4-2.127 2.652A8.01 8.01 0 013.07 14zm14.792 0h3.168a8.01 8.01 0 01-3.041 6.652L15.762 18l2-4zm-9.224 5h2.724l2.127 2.652A7.963 7.963 0 0112 22a7.963 7.963 0 01-3.683-.888L10.638 19z" />
+            </svg>
+            Striker<span>Store</span>
+        </a>
+        <div class="nav-right">
+            <span class="badge-count">21 produits</span>
+            <a href="login.html" class="btn-login">Se connecter →</a>
+        </div>
+    </nav>
+
+   <form action="order.php" method="post" onsubmit="return validateCommande(event)">
+    <table>
+        <tr>
+            <td rowspan="13"><img src="produit36.jpg" alt="foot36" width="200"></td>
+        </tr>
+        <tr><td>Vendeur</td><td>abderrahim kb</td></tr>
+        <tr><td>Référence</td><td>foot 36</td></tr>
+        <tr><td>Prix de livraison</td><td>500 DA</td></tr>
+        <tr><td>Couleur</td>
+            <td>
+                <input type="checkbox" name="color[]" value="red"> Red
+                <input type="checkbox" name="color[]" value="yellow"> Yellow
+            </td>
+        </tr>
+        <tr><td colspan="2"><div id="color-error" style="color: red;"></div></td></tr>
+        <tr><td>Prix</td><td><span id="unit-price" data-price="20000"><input type="hidden" name="unit-price" value="20000">20000 DA</span></td></tr>
+        <tr><td>Total</td><td><span id="total-price" name="tota">0 DA</span></td></tr>
+        <tr><td>Quantité</td><td><input id="quantity" type="number" name="quantity" min="1" oninput="updateTotal()"></td></tr>
+        <tr><td colspan="2"><div id="quantity-error" style="color: red;"></div></td></tr>
+        <tr><td>Pointure</td><td><input id="pointure" type="number" name="pointure" min="30" max="50"></td></tr>
+        <tr><td colspan="2"><div id="pointure-error" style="color: red;"></div></td></tr>
+        <tr><td colspan="2"><input type="submit" value="Commander"></td></tr>
+    </table>
+</form>
+<script src="create.js"></script>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2024 StrikerStore · abderrahim kb · Algérie</p>
+        <p>Livraison 500 DA · Paiement à la livraison</p>
+        <a href="login.html">Se connecter →</a>
+    </footer>
+</body>
+</html>
+
+
+

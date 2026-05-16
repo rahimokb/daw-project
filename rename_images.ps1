@@ -1,0 +1,14 @@
+Rename-Item -Path "produit1.jpg" -NewName "produit23.jpg" -ErrorAction SilentlyContinue
+Rename-Item -Path "produit2.jpg" -NewName "produit24.jpg" -ErrorAction SilentlyContinue
+Rename-Item -Path "produit3.jpg" -NewName "produit25.jpg" -ErrorAction SilentlyContinue
+Rename-Item -Path "produit5.jpg" -NewName "produit26.jpg" -ErrorAction SilentlyContinue
+Rename-Item -Path "produit6.jpg" -NewName "produit27.jpg" -ErrorAction SilentlyContinue
+Rename-Item -Path "produit7.jpg" -NewName "produit28.jpg" -ErrorAction SilentlyContinue
+Rename-Item -Path "produit8.jpg" -NewName "produit29.jpg" -ErrorAction SilentlyContinue
+Rename-Item -Path "produit9.jpg" -NewName "produit30.jpg" -ErrorAction SilentlyContinue
+Rename-Item -Path "produit10.jpg" -NewName "produit31.jpg" -ErrorAction SilentlyContinue
+Rename-Item -Path "produit11.jpg" -NewName "produit32.jpg" -ErrorAction SilentlyContinue
+Rename-Item -Path "produit13.jpg" -NewName "produit33.jpg" -ErrorAction SilentlyContinue
+Rename-Item -Path "produit14.jpg" -NewName "produit34.jpg" -ErrorAction SilentlyContinue
+Rename-Item -Path "produit15.jpg" -NewName "produit35.jpg" -ErrorAction SilentlyContinue
+Rename-Item -Path "produit16.jpg" -NewName "produit36.jpg" -ErrorAction SilentlyContinue
